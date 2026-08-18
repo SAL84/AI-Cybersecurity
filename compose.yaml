@@ -30,6 +30,12 @@ services:
     # container and take any Claude session with it. The entrypoint starts the
     # app in a detached tmux session instead.
     command: ["sleep", "infinity"]
+
+    # Docker's tiny init as PID 1, with sleep as its child. sleep cannot reap,
+    # and Claude sessions spawn background shells and browsers whose orphans
+    # would otherwise accumulate as zombies until the pids_limit starves the
+    # container. Takes effect on the next recreate.
+    init: true
     stdin_open: true
     tty: true
 
