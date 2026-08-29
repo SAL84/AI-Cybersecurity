@@ -125,6 +125,13 @@ const ENTRIES: CourseEntry[] = [
     view: { type: 'home', courseId: 'ai-real-product' },
   },
   {
+    id: 'ai-audit', no: '15', title: 'AI for Audit', track: 'Vertical',
+    color: '#7a5230', status: 'live',
+    note: 'AI on both sides of the engagement — using it in audit work without surrendering scepticism or the file, and auditing clients whose numbers a model helped produce.',
+    gaps: ['Awaiting review by a practising auditor', 'Standards named by body and subject only — clause-level detail deliberately withheld'],
+    view: { type: 'home', courseId: 'ai-audit' },
+  },
+  {
     id: 'agentic-ai', no: '¶', title: 'Agentic AI · interactive', track: 'Companion to Agent Engineering',
     color: '#5d5045', status: 'live',
     note: 'The agent-loop anatomy and four step-by-step scenarios. No longer a course-in-waiting — it is the hands-on companion to Agent Engineering.',
@@ -133,7 +140,7 @@ const ENTRIES: CourseEntry[] = [
 ];
 
 const PLANNED_COURSES = [
-  { no: '15', title: 'AI for Educators', track: 'Vertical', color: '#3f8a5e', target: 'TBD', note: 'Assessment design, academic honesty, and using AI to teach rather than to grade.' },
+  { no: '16', title: 'AI for Educators', track: 'Vertical', color: '#3f8a5e', target: 'TBD', note: 'Assessment design, academic honesty, and using AI to teach rather than to grade.' },
 ];
 
 const PLANNED_FEATURES = [

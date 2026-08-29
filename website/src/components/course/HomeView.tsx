@@ -21,6 +21,7 @@ const TRACK_CRUMB: Partial<Record<CourseId, string>> = {
   'ai-healthcare': 'Industry',
   'ai-legal': 'Industry',
   'ai-finance': 'Industry',
+  'ai-audit': 'Industry',
   'ai-evals': 'Build · Test · Secure',
   'ai-secure': 'Build · Test · Secure',
   'ai-vibecoding': 'Build · Test · Secure',
@@ -190,6 +191,18 @@ const META: Record<CourseId, {
       { no: '03', title: 'AI Essentials', sub: 'Prerequisite vocabulary', color: '#3f8a5e', view: { type: 'home', courseId: 'ai-essentials' } },
       { no: '08', title: 'Does Your AI Work?', sub: 'Testing what you deploy', color: '#c9421f', view: { type: 'home', courseId: 'ai-evals' } },
       { no: '12', title: 'AI for Healthcare', sub: 'The other regulated vertical', color: '#0f8a7a', view: { type: 'home', courseId: 'ai-healthcare' } },
+    ],
+  },
+  'ai-audit': {
+    color: '#7a5230', no: '15', kicker: 'Catalog №15 · Vertical track',
+    level: 'Intermediate', duration: '3h',
+    outcomes: ['Map where AI genuinely helps in audit work — and where the evidence duty stops it', 'Use AI at volume without surrendering scepticism, the evidence standard, or the file', 'Audit numbers a model helped produce: estimates, controls, and the management conversation', 'Know what the firm must settle before relying on a tool — and what an inspector will ask'],
+    audience: ['◆ External and internal auditors, from staff to partner', '◆ Audit-firm leaders and methodology owners weighing AI tools', '◇ Not audit guidance — orientation only; standards and duties vary by jurisdiction and firm'],
+    quote: '"The tool can read every invoice. It cannot sign the opinion — and the file must show whose judgement did."',
+    related: [
+      { no: '14', title: 'AI for Finance', sub: 'The other side of the numbers', color: '#b78320', view: { type: 'home', courseId: 'ai-finance' } },
+      { no: '08', title: 'Does Your AI Work?', sub: 'Testing the tools you rely on', color: '#c9421f', view: { type: 'home', courseId: 'ai-evals' } },
+      { no: '03', title: 'AI Essentials', sub: 'Prerequisite vocabulary', color: '#3f8a5e', view: { type: 'home', courseId: 'ai-essentials' } },
     ],
   },
   'ai-cybersec-se': {

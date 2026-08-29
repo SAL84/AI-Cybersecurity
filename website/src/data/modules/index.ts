@@ -16,6 +16,7 @@ import aiPrompting from './ai-prompting';
 import aiAgents from './ai-agents';
 import aiFinance from './ai-finance';
 import aiRealProduct from './ai-real-product';
+import aiAudit from './ai-audit';
 import type { Course, CourseId } from '../../types/course';
 
 const CYBERSEC_SE: Course = {
@@ -41,6 +42,7 @@ export const COURSES: Record<CourseId, Course> = {
   'ai-agents': aiAgents,
   'ai-finance': aiFinance,
   'ai-real-product': aiRealProduct,
+  'ai-audit': aiAudit,
 };
 
 export const COURSE = CYBERSEC_SE;

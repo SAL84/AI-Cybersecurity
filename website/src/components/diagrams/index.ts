@@ -60,6 +60,10 @@ import { CollapsedSliceDiagram, DemoVsProductWorksDiagram, ChecksWhileYouSleepDi
 import { WhereDataLivesDiagram, MigrationsBackupsDiagram, AccountsAndResetsDiagram, HiddenServicesDiagram, BelowScreenLedgerDiagram } from './course-diagrams-av';
 import { DeployRollbackDiagram, ShippingPipelinePlainDiagram, KnowingItBrokeDiagram, CostAtRealUsageDiagram, ElevenPmEmailDiagram } from './course-diagrams-aw';
 import { SoftwareRotDiagram, HandoverTestDiagram, WeekendVsRealProductDiagram, GenuinelyShippableDiagram } from './course-diagrams-ax';
+import { AuditScopeSafetyDiagram, AuditAIMapDiagram, FullPopulationTestingDiagram, AuditExposureDiagram, AuditPilotsDieDiagram } from './course-diagrams-ay';
+import { ScepticismVsToolDiagram, EvidenceNotOutputDiagram, WorkpaperQuestionDiagram, AuditPasteProblemDiagram, AuditReviewAtVolumeDiagram } from './course-diagrams-az';
+import { ModelBehindTheNumberDiagram, ClientAIInventoryDiagram, BlackBoxEstimateDiagram, ModelInControlDiagram, ManagementAIConversationDiagram } from './course-diagrams-ba';
+import { InspectorQuestionDiagram, ToolBeforeRelianceDiagram, RecurringEngagementDriftDiagram, AuditJobShiftDiagram, AuditSourceLadderDiagram } from './course-diagrams-bb';
 
 export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   AIBasicsOverview: AIBasicsOverviewDiagram,
@@ -366,4 +370,24 @@ export const DIAGRAM_REGISTRY: Record<string, React.ComponentType> = {
   HandoverTest: HandoverTestDiagram,
   WeekendVsRealProduct: WeekendVsRealProductDiagram,
   GenuinelyShippable: GenuinelyShippableDiagram,
+  AuditScopeSafety: AuditScopeSafetyDiagram,
+  AuditAIMap: AuditAIMapDiagram,
+  FullPopulationTesting: FullPopulationTestingDiagram,
+  AuditExposure: AuditExposureDiagram,
+  AuditPilotsDie: AuditPilotsDieDiagram,
+  ScepticismVsTool: ScepticismVsToolDiagram,
+  EvidenceNotOutput: EvidenceNotOutputDiagram,
+  WorkpaperQuestion: WorkpaperQuestionDiagram,
+  AuditPasteProblem: AuditPasteProblemDiagram,
+  AuditReviewAtVolume: AuditReviewAtVolumeDiagram,
+  ModelBehindTheNumber: ModelBehindTheNumberDiagram,
+  ClientAIInventory: ClientAIInventoryDiagram,
+  BlackBoxEstimate: BlackBoxEstimateDiagram,
+  ModelInControl: ModelInControlDiagram,
+  ManagementAIConversation: ManagementAIConversationDiagram,
+  InspectorQuestion: InspectorQuestionDiagram,
+  ToolBeforeReliance: ToolBeforeRelianceDiagram,
+  RecurringEngagementDrift: RecurringEngagementDriftDiagram,
+  AuditJobShift: AuditJobShiftDiagram,
+  AuditSourceLadder: AuditSourceLadderDiagram,
 };

@@ -78,7 +78,8 @@ export type CourseId =
   | 'ai-prompting'
   | 'ai-agents'
   | 'ai-finance'
-  | 'ai-real-product';
+  | 'ai-real-product'
+  | 'ai-audit';
 
 export interface Course {
   id: CourseId;

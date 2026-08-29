@@ -105,7 +105,7 @@ function StudioHero({ posts }: { posts: BlogPostMeta[] }) {
             <span className="font-studio-serif italic text-studio-kids font-normal">about </span>AI?
           </h1>
           <p className="font-studio-serif italic text-[17px] sm:text-[20px] lg:text-[24px] leading-[1.4] text-studio-ink-dim mt-5 lg:mt-7 max-w-[520px] font-normal">
-            Fourteen courses. From eight-year-olds to regulated industries. Everything is free, everything is real, nothing's on a corporate calendar.
+            Fifteen courses. From eight-year-olds to regulated industries. Everything is free, everything is real, nothing's on a corporate calendar.
           </p>
         </div>
         <aside className="bg-studio-paper border border-studio-rule rounded-[4px] p-5 lg:p-[26px] relative mt-6">
@@ -306,6 +306,7 @@ function StudioCatalog({ setView, completedLessons }: { setView: (v: View) => vo
       onClick: () => setView({ type: 'home', courseId: 'ai-real-product' }) },
   ];
   const pFinance = courseProgress('ai-finance', completedLessons);
+  const pAudit = courseProgress('ai-audit', completedLessons);
   const verticalCards: CardData[] = [
     { no: '12', title: 'AI for Healthcare', kicker: 'For clinical & health-tech', color: '#2c6db0',
       blurb: 'Where AI actually sits in care, how to read the evidence, and the regulatory reality. Orientation, not clinical guidance.',
@@ -322,6 +323,11 @@ function StudioCatalog({ setView, completedLessons }: { setView: (v: View) => vo
       modules: moduleCount('ai-finance'), level: 'Intermediate', progress: pFinance,
       badge: pFinance > 0 ? 'Resume →' : 'Open →',
       onClick: () => setView({ type: 'home', courseId: 'ai-finance' }) },
+    { no: '15', title: 'AI for Audit', kicker: 'For auditors & assurance teams', color: '#2c6db0',
+      blurb: 'AI on both sides of the engagement — using it without surrendering scepticism, and auditing numbers a model helped produce.',
+      modules: moduleCount('ai-audit'), level: 'Intermediate', progress: pAudit,
+      badge: pAudit > 0 ? 'Resume →' : 'Open →',
+      onClick: () => setView({ type: 'home', courseId: 'ai-audit' }) },
   ];
 
   const filterBtns: Array<{ key: Filter; label: string }> = [
@@ -333,7 +339,7 @@ function StudioCatalog({ setView, completedLessons }: { setView: (v: View) => vo
     <section className="px-4 sm:px-6 lg:px-12 pt-6 pb-10 lg:pb-14">
       <header className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-4 mb-6 lg:mb-7">
         <h2 className="font-studio-display text-[32px] sm:text-[38px] lg:text-[44px] text-studio-ink m-0 font-normal tracking-[-0.6px] lg:tracking-[-0.8px]">
-          The catalog<span className="hidden sm:inline font-studio-serif italic font-normal text-studio-ink-dim text-[20px] lg:text-[28px] ml-3">— fourteen on the shelf</span>
+          The catalog<span className="hidden sm:inline font-studio-serif italic font-normal text-studio-ink-dim text-[20px] lg:text-[28px] ml-3">— fifteen on the shelf</span>
         </h2>
         <div className="flex flex-wrap gap-2">
           {filterBtns.map(({ key, label }) => (
